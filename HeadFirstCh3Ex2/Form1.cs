@@ -49,5 +49,17 @@ namespace HeadFirstCh3Ex2
             bank += bob.GiveCash(5);
             UpdateForm();
         }
+
+        private void joePaysBob_Click(object sender, EventArgs e)
+        {
+            bob.ReceiveCash(joe.GiveCash(10));
+            UpdateForm();
+        }
+
+        private void bobPaysJoe_Click(object sender, EventArgs e)
+        {
+            joe.ReceiveCash(bob.GiveCash(5));
+            UpdateForm();
+        }
     }
 }
