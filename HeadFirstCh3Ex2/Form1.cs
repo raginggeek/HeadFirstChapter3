@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HeadFirstCh3Ex1
+namespace HeadFirstCh3Ex2
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int len = Talker.BlahBlahBlah(textBox1.Text, (int)numericUpDown1.Value);
-            MessageBox.Show("The message length is " + len);
         }
     }
 }
